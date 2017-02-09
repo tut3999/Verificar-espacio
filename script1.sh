@@ -9,7 +9,6 @@ do
 	echo $usep
 	if [ $usep -ge 80 ]; then
 		echo `sudo notify-send "Advertencia \"$partition\" esta al 90% de su uso"`
-		#echo "Running out of space \"$partition ($usep%)\" on $(hostname) as on $(date)"
 	else 
 		if [ $usep -ge 60 ]; then
 			echo "Tienes un 60% en la particion \"$partition\""
